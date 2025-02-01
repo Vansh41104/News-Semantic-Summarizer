@@ -121,4 +121,4 @@ iface = gr.Interface(
 
 import os
 if __name__ == "__main__":
-    iface.launch(server_port=int(os.getenv("PORT", 7860)), share=True)
+    iface.launch(server_port=int(os.getenv("PORT")), share=True)
