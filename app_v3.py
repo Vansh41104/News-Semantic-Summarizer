@@ -78,7 +78,7 @@ Respond ONLY with the final summary text without any formatting, markers, or add
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_prompt}
             ],
-            model="llama3-70b-8192",  # Updated model name
+            model="deepseek-r1-distill-llama-70b",  # Updated model name
             temperature=0.7,
             max_tokens=400,
             top_p=0.9,
