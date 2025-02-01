@@ -5,3 +5,4 @@ textblob>=0.17.1
 gradio>=4.0.0
 groq>=0.5.0
 python-dotenv>=1.0.0
+flask
