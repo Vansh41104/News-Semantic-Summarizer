@@ -115,10 +115,14 @@ iface = gr.Interface(
         "Enter a URL to perform semantic analysis on its content. "
         "A  summary is generated using NLP techniques and a Hugging Face text-generation model."
     ),
-    allow_flagging="never",
+    flagging_mode="never"
     
 )
 
 import os
 if __name__ == "__main__":
-    iface.launch(server_port=int(os.getenv("PORT")), share=True)
+    iface.launch(
+    server_name="0.0.0.0",
+    server_port=int(os.getenv("PORT", 7860)),
+    share=False  # Disable sharing for production
+)
