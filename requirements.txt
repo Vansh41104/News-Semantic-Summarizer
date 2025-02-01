@@ -6,4 +6,3 @@ gradio>=4.0.0
 groq>=0.5.0
 python-dotenv>=1.0.0
 flask
-en-core-web-sm==3.7.1
