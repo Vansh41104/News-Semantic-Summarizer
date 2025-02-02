@@ -122,7 +122,6 @@ iface = gr.Interface(
 import os
 if __name__ == "__main__":
     iface.launch(
-    server_name="0.0.0.0",
     server_port=int(os.getenv("PORT", 7860)),
     share=False  # Disable sharing for production
 )
