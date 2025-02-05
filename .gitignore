@@ -1,3 +1,4 @@
 .env
 .gradio 
 __pycache__
+users.db
