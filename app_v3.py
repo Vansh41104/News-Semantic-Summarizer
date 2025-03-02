@@ -85,13 +85,14 @@ Respond ONLY with the final summary text without any formatting, markers, or add
         )
         
         raw_summary = chat_completion.choices[0].message.content
+        # print(raw_summary)
         
         # Robust cleaning pipeline
-        # cleaned_summary = raw_summary.strip()
-        # for marker in ["<think>", "</think>", "</s>", "```"]:
-        #     cleaned_summary = cleaned_summary.split(marker)[0]
+        cleaned_summary = raw_summary.strip()
+        for marker in ["<think>", "</think>", "</s>", "```"]:
+            cleaned_summary = cleaned_summary.split(marker)[0]
         
-        # # Ensure valid output
+        # Ensure valid output
         # if not cleaned_summary:
         #     return "Summary generation failed - please try again with different content"
             
