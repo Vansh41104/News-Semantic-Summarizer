@@ -10,4 +10,4 @@ groq>=0.5.0
 python-dotenv>=1.0.0
 bcrypt>=4.0.1
 google-generativeai>=0.3.0
-sqlite3>=3.39.0
+newspaper3k>=0.2.8
