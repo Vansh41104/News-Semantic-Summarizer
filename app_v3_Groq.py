@@ -805,17 +805,11 @@ def create_interface():
 
 demo = create_interface()
 
-# Launch the app
-demo.launch(share=False)
 
 if __name__ == "__main__":
     try:
-        import argparse
-        parser = argparse.ArgumentParser()
-        parser.add_argument("--port", type=int, default=8001, help="Port to run the Gradio app on")
-        parser.add_argument("--share", action="store_true", help="Create a shareable link")
-        args = parser.parse_args()
-        demo.launch(server_name="0.0.0.0", server_port=8001, share=False)
+        port = int(os.environ.get("PORT", 8001))
+        demo.launch(server_name="0.0.0.0", server_port=port, share=False)
     except KeyboardInterrupt:
         print("Shutting down server...")
     except Exception as e:
