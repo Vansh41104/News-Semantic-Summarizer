@@ -808,7 +808,7 @@ demo = create_interface()
 
 if __name__ == "__main__":
     try:
-        port = int(os.environ.get("PORT"))
+        port = int(os.environ.get("PORT",8081))
         demo.launch(server_name="0.0.0.0", server_port=port, share=False)
     except KeyboardInterrupt:
         print("Shutting down server...")
