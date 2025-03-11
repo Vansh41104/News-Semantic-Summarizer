@@ -65,7 +65,7 @@ This will start a local **Gradio** server at `http://127.0.0.1:7860/`, where you
 ## License
 This project is licensed under the MIT License. Feel free to modify and enhance it!
 
-##Deploy
+## Deploy
 This project is deployed on Render, because of which it takes around a minute to start. ```https://news-semantic-summarizer.onrender.com/```
 
 ## Author
