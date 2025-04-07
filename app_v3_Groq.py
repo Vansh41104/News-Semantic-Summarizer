@@ -255,7 +255,7 @@ Respond ONLY with the final summary text without any formatting, markers, or add
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": user_prompt}
                 ],
-                model="deepseek-r1-distill-llama-70b",
+                model="meta-llama/llama-4-scout-17b-16e-instruct",
                 temperature=0.7,
                 max_tokens=400,
                 top_p=0.9,
